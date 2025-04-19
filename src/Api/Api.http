@@ -1,0 +1,14 @@
+@Api_HostAddress = http://localhost:5263
+
+### Criar um novo usuário
+POST {{Api_HostAddress}}/user/
+Content-Type: application/json
+
+{
+  "nome": "string",
+  "email": "string",
+  "senha": "string"
+}
+
+### Obter todos os usuários
+GET {{Api_HostAddress}}/user/
