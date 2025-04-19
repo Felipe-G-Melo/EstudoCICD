@@ -19,8 +19,7 @@ app.MapPost("/user", (UserInput input) =>
     return user;
 });
 
-
-app.MapGet("/user", () =>
+app.MapGet("/users", () =>
 {
     var user = new User("Felipe", "felipe@gmail.com", "123456");
     return user;
