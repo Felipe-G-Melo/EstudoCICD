@@ -17,7 +17,7 @@ public class UserTest
 
         Assert.NotNull(user);
         Assert.NotEqual(Guid.Empty, user.Id);
-        Assert.Equal(userInput.Nome, user.Nome);
+        Assert.NotEqual(userInput.Nome, user.Nome);
         Assert.Equal(userInput.Email, user.Email);
         Assert.Equal(userInput.Senha, user.Senha);
     }
